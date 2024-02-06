@@ -1,6 +1,11 @@
 import { createClient } from "@liveblocks/client";
 import { createRoomContext } from "@liveblocks/react";
   
+// The first step in connecting to Liveblocks is creating a client
+// which will be responsible for communicating with the back end.
+// You can do this by modifying createClient in your config file,
+// and passing your public API key.
+
 const client = createClient({
   publicApiKey: process.env.NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY!,
 });
